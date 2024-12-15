@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %} 
+{% load static %} 
+
+{% block title %} Home Page (Landing Page){% endblock title %} 
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock stylesheets %}
+
+{% block content %}
+<h1>Welcome To Kadi's Web Page</h1>  
+
+<hr>
+
+<h2> List Game Page </h2>
+<a href = "list/">Press To Navigate</a>
+
+<hr>
+<p><strong>All Rights Reserved to Kadi's Website </strong></p>
+<P>Its The First-Last Final</p>
+
+{% endblock content %}

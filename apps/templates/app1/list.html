@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %} 
+{% load static %} 
+
+{% block title %} List Games Page {% endblock title %} 
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock stylesheets %}
+
+{% block content %}
+<h1>List Of Game Page</h1>  
+
+<hr>
+
+<table>
+    <tr>
+        <th>Game Title</th>
+        <th>Developer</th>
+    </tr>
+    {% for game in games%}
+    <tr>
+        <td>{{game.title}}</td>
+        <td>{{game.developer.name}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<hr>
+
+<p><strong>All Rights Reserved to Kadi's Website </strong></p>
+<P>Its The First-Last Final</p>
+
+{% endblock content %}
